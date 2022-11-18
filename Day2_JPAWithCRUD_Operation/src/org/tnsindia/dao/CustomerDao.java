@@ -1,0 +1,14 @@
+package org.tnsindia.dao;
+
+import org.tnsindia.entities.Customer;
+
+public interface CustomerDao {
+	
+	void addCustomer (Customer customer);
+	void updateCustomer (Customer customer);
+	void deleteCustomer (Customer customer);
+	Customer getCustomerByID (int cust_ID);
+	void beginTransaction();
+	void commitTransaction();
+	
+}
