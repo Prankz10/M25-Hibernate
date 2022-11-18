@@ -8,6 +8,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="Customer")
+
 //class
 public class Customer implements Serializable{
 
@@ -22,9 +23,8 @@ public class Customer implements Serializable{
 	private String Name;
 	private double product_price;
 	
+	//setters and getters method
 
-	//getters and setters
-	
 	public int getCust_ID() {
 		return cust_ID;
 	}
@@ -43,6 +43,5 @@ public class Customer implements Serializable{
 	public void setProduct_price(double product_price) {
 		this.product_price = product_price;
 	}
-	
 	
 }

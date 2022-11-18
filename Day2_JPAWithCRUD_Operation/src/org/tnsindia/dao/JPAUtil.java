@@ -9,19 +9,19 @@ public class JPAUtil {
 	private static EntityManagerFactory f;
 	private static EntityManager em;
 	
-	//to initialise the static data members
-	static 
+	//static block is used to initialize the static data members
+	static
 	{
 		f=Persistence.createEntityManagerFactory("JPA-PU");
-		
 	}
+	
 	public static EntityManager getEntityManager()
 	{
-		if(em==null || !em.isOpen())
+		if(em == null || !em.isOpen())
 		{
 			em=f.createEntityManager();
 		}
 		return em;
 	}
-	
+
 }
